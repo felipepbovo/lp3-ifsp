@@ -67,11 +67,3 @@ alunos = ['Pedro', 'Ana']
 aluno = 'Maria'
 print(aluno in alunos)
 print(aluno not in alunos)
-
-
-
-
-
-
-
-

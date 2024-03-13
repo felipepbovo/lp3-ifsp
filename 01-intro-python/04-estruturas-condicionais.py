@@ -138,4 +138,3 @@ match dia:
         print('Dia útil')
     case _:
         print('Inválido')
-

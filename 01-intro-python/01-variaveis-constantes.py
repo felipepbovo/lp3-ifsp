@@ -49,4 +49,3 @@ def somar(numero1, numero2):
     :return a soma dos dois números
     '''
     return numero1 + numero2
-
