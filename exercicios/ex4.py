@@ -1,25 +1,16 @@
-'''
- O código identificador de funcionários de uma empresa contém 7 caracteres, inicia com a sequência de caracteres BR, 
- em seguida apresenta um número inteiro entre 0001 e 9999 e finaliza com o caractere X.
+import re
 
-Exemplos válidos:
+def verificador_de_codigo(codigo):
+    codigo_padrao = r'^BR\d{4}X$'
 
-    BR0001X
-    BR1236X
-    BR9999X
-
-Exemplos inválidos:
-
-    br0001X
-    BR126X
-    BR99999X
-    BR9999Y
+    if re.match(codigo_padrao, codigo):
+        return True
+    else:
+        return False
     
-Crie uma função em Python que implementa essa verificação
-'''
-def varificador_de_codigo(codigo):
-    if (len(codigo)!= 7):
-                return 'Código falta caracteres'
-    elif(codigo ):
+codigo_funcionario = input("Insira o código de funcionário: ")
 
-#codigo = input('insira o código de funcionário:'
+if verificador_de_codigo(codigo_funcionario):
+    print("O código do funcionário está correto")
+else:
+    print("O código do funcionário não está correto")

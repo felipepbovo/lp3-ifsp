@@ -1,3 +1,4 @@
+
 valor = float(input('insira o valor da compra:'))
 if (valor >=10 and valor <=99.99):
     print(valor * 0.95) 
