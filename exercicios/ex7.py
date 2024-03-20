@@ -18,7 +18,7 @@ def calcular_imc(altura, peso):
         print('Obesidade de Classe 3')
 
 def calcular_diferenca(altura, peso):
-    peso_necessario = (18.5 * altura * altura) - peso
+    peso_necessario = peso - (18.5 * altura * altura)
 
     if valor_imc(altura, peso) < 18.5:
         print(f"Você precisa ganhar {peso_necessario} Kg")
